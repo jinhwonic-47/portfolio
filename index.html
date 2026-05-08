@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Traipat Thongthawi - Backend Developer & Student Portfolio. Skilled in Flutter, React, Node.js, Arduino, and more.">
+    <meta name="keywords" content="Traipat Thongthawi, Backend Developer, Portfolio, Flutter, React, Node.js">
+    <meta name="author" content="Traipat Thongthawi">
+    <title>Traipat Thongthawi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                Portfolio
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">
+                    <span class="greeting-wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-name">
+                    Traipat<br>
+                    <span class="name-highlight">Thongthawi</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">&gt;</span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    A passionate student specializing in Backend Programming, 
+                    building modern applications with clean code and creative solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="code-title">about_me.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Traipat Thongthawi"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Backend Developer"</span>,
+  <span class="code-property">passion</span>: <span class="code-string">"Building things"</span>,
+  <span class="code-property">coffee</span>: <span class="code-boolean">true</span>,
+  <span class="code-method">code</span>: () => {
+    <span class="code-keyword">return</span> <span class="code-string">"✨ Magic ✨"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">มาทำความรู้จักผมกัน</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-card">
+                        <div class="about-avatar">
+                            <img src="image/222633.jpg" alt="Traipat Thongthawi" class="about-photo">
+                        </div>
+                        <div class="about-image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-heading">
+                        A Student Developer Who Loves 
+                        <span class="text-gradient">Creating Things</span>
+                    </h3>
+                    <p class="about-text">
+                        I'm Traipat Thongthawi, a dedicated student focusing on Backend Programming. 
+                        I enjoy turning complex problems into simple, elegant solutions. My journey in 
+                        programming started with curiosity, and now it has become my passion.
+                    </p>
+                    <p class="about-text">
+                        Computer Science student with a deep interest in backend architecture and system
+optimization. Experienced in designing and implementing e-commerce logic for web and
+mobile platforms. A fast learner who values clean code and leverages constructive
+feedback to improve system reliability. Seeking a Backend Developer Internship to bridge
+academic theory with complex, real-world software engineering challenges.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Education</span>
+                                <span class="info-value"> Valaya Alongkorn Rajabhat University under the Royal Patronage</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Thailand</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <span class="info-label">Interests</span>
+                                <span class="info-value">Coding, IoT, Design</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value">Thai, English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-categories">
+                <!-- Frontend & Mobile -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Frontend & Mobile</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #02569B">
+                                <i class="fab fa-flutter" aria-hidden="true"></i>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="32" height="32">
+                            </div>
+                            <span class="skill-name">Flutter</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #61DAFB">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="32" height="32">
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #000000">
+                                <i class="fas fa-mobile-screen"></i>
+                            </div>
+                            <span class="skill-name">Expo Go</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #339933">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="32" height="32">
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #4479A1">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="32" height="32">
+                            </div>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design & Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design & Tools</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #F24E1E">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" width="32" height="32">
+                            </div>
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #A259FF">
+                                <i class="fas fa-pen-nib"></i>
+                            </div>
+                            <span class="skill-name">UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #68217A">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="32" height="32">
+                            </div>
+                            <span class="skill-name">C#</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #00599C">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="32" height="32">
+                            </div>
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #3776AB">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="32" height="32">
+                            </div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #ED8B00">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="32" height="32">
+                            </div>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #F7DF1E">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="32" height="32">
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #E34F26">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="32" height="32">
+                            </div>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #777BB4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="32" height="32">
+                            </div>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #336791">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="32" height="32">
+                            </div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware & IoT -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Hardware & IoT</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #00979D">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" width="32" height="32">
+                            </div>
+                            <span class="skill-name">Arduino</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #FF6B35">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <span class="skill-name">Hardware</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Some things I've built</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: E-Commerce -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="image/155317.jpg" alt="E-Commerce App" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce App</h3>
+                        <p class="project-description">
+                            A full-featured mobile e-commerce application with product browsing, 
+                            cart management, and secure checkout functionality.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Spin Wheel -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1596838132731-dd94c88d37ad?auto=format&fit=crop&q=80&w=800" alt="Spin Wheel Game" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Spin Wheel Game</h3>
+                        <p class="project-description">
+                            An interactive spin wheel application with customizable prizes, 
+                            smooth animations, and engaging user experience.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS Animation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Map Integration -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=800" alt="Map Integration App" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Map Integration App</h3>
+                        <p class="project-description">
+                            A location-based mobile application with real-time map integration, 
+                            markers, and route navigation features.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Google Maps</span>
+                            <span class="tag">Expo Go</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: IoT Hardware -->
+                <article class="project-card" data-category="iot">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800" alt="Smart IoT System" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Smart IoT System</h3>
+                        <p class="project-description">
+                            An Arduino-based IoT system for monitoring and controlling devices 
+                            remotely with a mobile dashboard interface.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Flutter</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Mobile App -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="image/152948.jpg" alt="OTOP Connect" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">OTOP Connect</h3>
+                        <p class="project-description">
+                            A mobile marketplace connecting local OTOP producers with customers, 
+                            featuring product search and category filtering.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: UX/UI Design -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="image/203554.jpg" alt="UI/UX Case Study" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">UI/UX Case Study</h3>
+                        <p class="project-description">
+                            A comprehensive UI/UX design project showcasing user research, 
+                            wireframing, prototyping, and final design implementation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-centered">
+                <div class="contact-intro">
+                    <div class="contact-emoji">💬</div>
+                    <h3>Let's Connect!</h3>
+                    <p>
+                        I'm always open to new opportunities, collaborations, and interesting projects. 
+                        Feel free to reach out anytime!
+                    </p>
+                </div>
+                <div class="contact-cards">
+                    <a href="mailto:traipatjasjinji@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon email-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">traipatjasjinji@gmail.com</span>
+                        <span class="contact-card-action">Send an email <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="tel:0624647787" class="contact-card" id="contact-phone">
+                        <div class="contact-card-icon phone-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span class="contact-card-label">Phone</span>
+                        <span class="contact-card-value">062-464-7787</span>
+                        <span class="contact-card-action">Give me a call <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    Portfolio
+                </a>
+                <p class="footer-text">
+                    Designed & Built by <strong>Traipat Thongthawi</strong>
+                </p>
+                <div class="footer-social">
+                    <a href="mailto:traipatjasjinji@gmail.com" class="social-link" aria-label="Email" id="footer-email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub" id="footer-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Traipat Thongthawi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
